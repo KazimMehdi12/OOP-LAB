@@ -3,12 +3,11 @@
 using namespace std;
 
 const int max_part = 5;
-const int donation = 10;
 int countOfEvent1=0;
 int countOfEvent2=0;
 string event1[max_part];
 string event2[max_part];
-
+ 
 void Registration(){
 	cout<<"Regester For Event 1 : "<<endl;
 	for(int i=0 ; i<max_part ; i++){
@@ -47,6 +46,7 @@ void AttendenceChecker(){
 }
 
 void TotalDonation(){
+	int donation = 10;
 	int total = (countOfEvent1 + countOfEvent1)*donation;
 	cout<<"The Total Donation is :"<<total<<endl<<endl;
 } 
