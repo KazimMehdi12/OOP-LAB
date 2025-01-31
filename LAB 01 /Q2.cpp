@@ -120,9 +120,9 @@ void GenerateReport(){
 }
 
 int main(){
-	InputAQI(); 
-  GenerateReport();
-	visualization();
-	MontlyAverage();
-  mostImprovedCity();
+InputAQI(); 
+GenerateReport();
+visualization();
+MontlyAverage();
+mostImprovedCity();
 }
