@@ -30,7 +30,7 @@ public:
         } 
 		else if(days >= 10) {
             discount = rentalPrice * 0.1 * days;
-        }
+         }
         return (rentalPrice*days) - discount;
     }
 
