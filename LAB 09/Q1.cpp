@@ -51,7 +51,4 @@ int main() {
 
     p2->displayTreatment();
     p2->calculateCost();
-
-    delete p1;
-    delete p2;
 }
