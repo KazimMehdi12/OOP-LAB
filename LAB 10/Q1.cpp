@@ -8,21 +8,20 @@ class Vehicles{
 		string line;
 	public:
 		void readFile(){
-			file.open("vehicles.txt");
+		   file.open("vehicles.txt");
 
-			if(!file.is_open()){
-				cout<<"Error: File not opened"<<endl;
-				return;
+		   if(!file.is_open()){
+			 cout<<"Error: File not opened"<<endl;
+			 return;
+			}
+		   while(getline(file, line)){
+			  if(line[0] == '#' || line.empty()){
+			  continue;
+			}
+			   cout<<"Line: "<<line<<endl;
 			}
 
-			while(getline(file, line)){
-				if(line[0] == '#' || line.empty()){
-					continue;
-				}
-				cout<<"Line: "<<line<<endl;
-			}
-
-			file.close();
+		    file.close();
 		}
 };
 
